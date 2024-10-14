@@ -53,13 +53,42 @@ nav a {
 /* WELCOME SECTION */
 #welcome-section {
     height: 100vh; /* Full viewport height */
-    display: flex; /* Flexbox for centering content */
-    justify-content: center; /* Center horizontally */
-    align-items: center; /* Center vertically */
+
     background-color: #252525; /* Background color for the welcome section */
     padding-top: 60px; /* Space for the navbar */
     /* Add any additional styling you want for the welcome section */
 }
+
+
+.profile{
+    float: left;
+    position: relative; /* Necessary to use top and right */
+    top: 70px; /* Move 20 pixels down */
+    left: 140px; /* Move 20 pixels to the right */    
+}
+
+img{
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    margin-right: 20px;
+   
+}
+
+.heading{
+    position: relative; /* Necessary to use top and right */
+    top: 160px; /* Move 20 pixels down */
+    left: 170px; /* Move 20 pixels to the right */
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: medium;
+    font-style: normal;
+}
+
 /* WELCOME SECTION */
 
 /* PROJECT SECTION */
@@ -81,21 +110,42 @@ nav a {
     align-items: center; 
     background-color: #252525; 
     padding-top: 60px; 
+    gap: 20px;    
 }
 /* CONTACTS */
 
+footer{
+    height: 30vh; 
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+    background-color: #252525; 
+    padding-top: 60px; 
+    gap: 20px;    
+}
+
 
 /* TYPING ANIMATION */
+
+
+
 .container{
-    width: 550px;
-    position: absolute;
+    width: 590px;
     display: flex;
     gap: 20px;
     overflow: hidden;
+    position: relative; /* Necessary to use top and right */
+    top: 170px; /* Move 20 pixels down */
+    left: 170px; /* Move 20 pixels to the right */
+    color: white;
+    font-family: "Roboto Mono", monospace;
+    font-optical-sizing: auto;
+    font-weight: medium;
+    font-style: normal;
 }
 
 .container span{
-    font-size: 3.2rem;
+    font-size: 2.5rem;
     font-weight: 700;
     position: relative;
 }
