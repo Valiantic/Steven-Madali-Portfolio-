@@ -54,20 +54,30 @@ nav a {
 /* WELCOME SECTION */
 #welcome-section {
     height: 100vh; /* Full viewport height */
-
-    background-color: #252525; /* Background color for the welcome section */
     padding-top: 60px; /* Space for the navbar */
     /* Add any additional styling you want for the welcome section */
     
     
+    
 }
+
+/* ANIMATED SPACE BACKGROUND */
+#video-background, video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+  }
 
 
 .profile{
     float: left;
     position: relative; /* Necessary to use top and right */
-    top: 90px; /* Move 20 pixels down */
-    left: 140px; /* Move 20 pixels to the right */    
+    top: 95px; /* Move 20 pixels down */
+    left: 170px; /* Move 20 pixels to the right */    
 }
 
 img{
@@ -81,7 +91,7 @@ img{
 
 .heading{
     position: relative; /* Necessary to use top and right */
-    max-width: 800px;
+    max-width: 700px;
     top: 160px; /* Move 20 pixels down */
     left: 170px; /* Move 20 pixels to the right */
     color: white;
@@ -91,17 +101,18 @@ img{
     font-optical-sizing: auto;
     font-weight: medium;
     font-style: normal;
-
+    
 }
 
 .link-items{
     position: relative;
     top: 180px;
     left: 170px;
-    max-width: 800px;
+    max-width: 300px;
     gap: 10px;
     display: flex;
     gap: 15px;
+  
 }
 
 i{
@@ -121,6 +132,12 @@ i{
     border-radius: 12px;
     position: relative;
    
+}
+
+.cvbtn:hover{
+    background-color: white;
+    color: #252525;
+    font-weight: 500;
 }
 
 /* WELCOME SECTION */
@@ -200,7 +217,7 @@ footer{
     right: 0;
     height: 100%;
     width: 100%;
-    background: #252525;
+    background: black;
     border-left: 6px solid rgb(255, 255, 255);
     animation: animate 4s steps(12) infinite;
 }
@@ -214,4 +231,89 @@ footer{
     }
 }
 /* TYPING ANIMATION */
+
+
+
+/* MEDIA QUERIES */
+  
+@media (max-width: 479px) {
+    /* Styles for extra small phones */
+    #navbar{
+        position: fixed;
+    }
+    nav{
+        position: fixed;
+        max-width: 100%;
+        font-size: 12px;
+        text-align: center;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    video{
+        max-width: 10%;
+        height: 100vh;
+        z-index: -1;
+        object-fit: cover;
+        
+    }
+    #welcome-section{
+        max-width: 100%;
+    }
+    .profile{
+        position: relative;
+        top: 8vh;
+        left: 20px;
+        max-width: 80px;
+    }
+    .profile img{
+        width: 100px;
+        height: 100px;
+    }
+    .heading{
+        top: 90px;
+        left: 55px;
+        font-size: 7px;
+        max-width: 80%;
+    }
+    .container{
+        position: relative;
+        top: 90px;
+        left: 55px;
+        width: 590px;
+        max-width: 250px;
+    }
+    .container span{
+        font-size: 0.7rem;
+        font-weight: 700;
+        position: relative;
+    }
+    .link-items{
+        top: 90px;
+        left: 50px;
+        max-width: 200px;
+        margin-top: 7px;
+    }
+    .profile-links, .fa-brands{
+       font-size: 0.5rem;
+       display: flex;
+       gap: 1px;
+    }
+    .cvbtn{
+       
+        padding: 7px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 7px;
+        cursor: pointer;
+        border-radius: 12px;
+        position: relative;
+    }
+   
+    
+
+}
+
+
 
