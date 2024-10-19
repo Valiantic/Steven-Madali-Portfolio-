@@ -95,8 +95,8 @@ img{
     top: 160px; /* Move 20 pixels down */
     left: 170px; /* Move 20 pixels to the right */
     color: white;
-    font-size: 14px;
-    font-weight: 700;
+    font-size: 1rem;
+    font-weight: 100;
     font-family: "Roboto Mono", monospace;
     font-optical-sizing: auto;
     font-weight: medium;
@@ -182,7 +182,7 @@ footer{
 
 
 
-.container{
+.typewriter{
     width: 590px;
     max-width: 800px;
     display: flex;
@@ -198,21 +198,21 @@ footer{
     font-style: normal;
 }
 
-.container span{
+.typewriter span{
     font-size: 2.5rem;
     font-weight: 700;
     position: relative;
 }
 
-.container span.myText{
+.typewriter span.myText{
     color: white;
 }
 
-.container span.headText{
+.typewriter span.headText{
     color: rgb(48, 196, 255);
 }
 
-.container .headText::after{
+.typewriter .headText::after{
     content: "";
     position: absolute;
     left: 0;
@@ -242,21 +242,27 @@ footer{
     /* Styles for extra small phones */
     #navbar{
         position: fixed;
+        flex-direction: column;
+        align-items: center;
     }
     nav{
         position: fixed;
+        width: 400px;
         max-width: 100%;
         font-size: 12px;
         text-align: center;
         display: flex;
         align-items: center;
         justify-content: center;
+        border: 2px solid red;
     }
     video{
-        max-width: 10%;
+        width: 80px;
+        max-width: 100%;
         height: 100vh;
         z-index: -1;
         object-fit: cover;
+        border: 2px solid red;
         
     }
     #welcome-section{
@@ -265,36 +271,43 @@ footer{
     .profile{
         position: relative;
         top: 8vh;
-        left: 20px;
+        left: 10px;
         max-width: 80px;
     }
     .profile img{
-        width: 100px;
-        height: 100px;
+        width: 70px;
+        height: 70px;
     }
-    .heading{
+    .heading {
         top: 90px;
-        left: 55px;
-        font-size: 7px;
-        max-width: 80%;
+        left: 3px;
+        width: 280px;
+        max-width: 100%;
+        border: 2px solid red;
     }
-    .container{
+    .heading h4{
+        font-size: 8px;
+    }
+    .typewriter{
+        border: 2px solid red;
+
         position: relative;
         top: 90px;
-        left: 55px;
-        width: 590px;
+        left: 1px;
+        width: 470px;
         max-width: 250px;
     }
-    .container span{
+    .typewriter span{
         font-size: 0.7rem;
         font-weight: 700;
         position: relative;
     }
     .link-items{
         top: 90px;
-        left: 50px;
-        max-width: 200px;
+        left: 2px;
+        max-width: 150px;
         margin-top: 7px;
+        border: 2px solid red;
     }
     .profile-links, .fa-brands{
        font-size: 0.5rem;
